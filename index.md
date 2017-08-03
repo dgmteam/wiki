@@ -2,5 +2,5 @@
 layout: default
 ---
 
-- [Elastic Search](/elasticsearch)
-- [Git](/git)
+- [Elastic Search](elasticsearch)
+- [Git](git)
