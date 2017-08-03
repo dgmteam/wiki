@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Elastic Search
+label: index
 ---
 
 ## Elastic Search
