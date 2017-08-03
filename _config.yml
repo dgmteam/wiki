@@ -7,11 +7,17 @@ collections:
   elasticsearch:
     output: true
     defaults:
-      -
-        tags: [elasticsearch]
+      tags:
+        - elasticsearch
 
   git:
     output: true
     defaults:
-      -
-        tags: [git]
+      tags:
+        - git
+
+  tdd:
+    output: true
+    defaults:
+      tags:
+        - tdd

@@ -24,7 +24,9 @@
       <div class="tags">
         Tags:
         <ul>
-          <li>{{ page.tags | sort }}</li>
+          {% for t in page.tags %}
+          <li>{{ t }}</li>
+          {% endfor %}
         </ul>
       </div>
       {{ content }}
