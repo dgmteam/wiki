@@ -6,7 +6,7 @@ layout: default
 {% for post in site.git %}
 {% unless post.label == 'index' %}
 <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
 </li>
 {% endunless %}
 {% endfor %}
@@ -15,7 +15,7 @@ layout: default
 {% for post in site.elasticsearch %}
 {% unless post.label == 'index' %}
 <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
 </li>
 {% endunless %}
 {% endfor %}
