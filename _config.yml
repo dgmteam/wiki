@@ -1,7 +1,7 @@
 title: DigiMed Wiki
 description: DigiMed encyclopedia
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 
 collections:
   elasticsearch:
