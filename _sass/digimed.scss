@@ -1,0 +1,34 @@
+.tags {
+    color: #888;
+    font-size: .8em;
+
+    ul {
+        display: inline-block;
+        padding: 0;
+    }
+    li {
+        font-size: 1em;
+        list-style: none;
+        display: inline-block;
+        padding: .2em 1em;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        line-height: 1;
+
+        & + li {
+            margin-right: 5px;
+        }
+    }
+}
+
+.head-nav {
+    text-align: right;
+    margin-top: -20px;
+    a {
+        color: #aaa;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

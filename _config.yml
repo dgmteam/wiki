@@ -1,1 +1,17 @@
-theme: jekyll-theme-minimal
+title: DigiMed Wiki
+description: DigiMed encyclopedia
+
+theme: jekyll-theme-cayman
+
+collections:
+  elasticsearch:
+    output: true
+    defaults:
+      -
+        tags: [elasticsearch]
+
+  git:
+    output: true
+    defaults:
+      -
+        tags: [git]
