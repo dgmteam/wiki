@@ -21,7 +21,22 @@ Dưới đây giải thích một vài thuật ngữ cơ bản của ES
 
 **Document**
 
-Đây là đơn vị lưu trữ cơ bản của ES. Do lịch sử vốn dùng để lưu trữ tài liệu văn bản nên cái tên này cũng không có gì lạ. Thể hiện của nó đơn giản là một đối tượng JSON. Có thể hiểu mỗi document như một row trong cơ sở dữ liệu quan hệ. Mỗi document sẽ có nhiều **field** và giá trị tương ứng. Cấu trúc của document mềm dẻo, không chặt như trong RDBMS. Document có thể lồng nhau,
+Một cách ngắn gọn, ES là một distributed document store. Các object thể hiện trên các ngôn ngữ khác nhau đều được serialize và lưu trữ dưới dạng document, cụ thể là JSON document. Chú ý rằng tuy gần giống nhau nhưng object mang đặc trưng của từng ngôn ngữ, cách tổ chức trong bộ nhớ cũng khác nhau, còn document là dạng đã được serialize, sử dụng một tiêu chuẩn chung để có thể trao đổi giữa các node, các ứng dụng.
+
+```
+// Object Javascript
+{
+  name: 'The song of Ice and Fire'
+}
+```
+```
+// JSON document
+{
+  "name": "The song of Ice and Fire
+}
+```
+
+Đây là đơn vị lưu trữ cơ bản của ES. Do lịch sử vốn dùng để lưu trữ tài liệu văn bản nên cái tên này cũng không có gì lạ. Thể hiện của nó đơn giản là một đối tượng JSON. Có thể hiểu mỗi document như một row trong cơ sở dữ liệu quan hệ. Mỗi document sẽ có nhiều **field** và giá trị tương ứng. Cấu trúc của document mềm dẻo, không chặt như trong RDBMS. Document có thể lồng nhau.
 
 **Index**
 

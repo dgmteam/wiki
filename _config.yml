@@ -21,3 +21,9 @@ collections:
     defaults:
       tags:
         - tdd
+
+  aspnet_core:
+    output: true
+    defaults:
+      tags:
+        - aspnet_core
