@@ -27,3 +27,9 @@ collections:
     defaults:
       tags:
         - aspnet_core
+
+  sysadmin:
+    output: true
+    defaults:
+      tags:
+        - sysadmin
