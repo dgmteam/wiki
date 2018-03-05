@@ -15,6 +15,8 @@ openssl req -newkey rsa:2048 -nodes -keyout id_server.key -x509 -days 365 -out i
 openssl pkcs12 -inkey id_server.key -in id_server.crt -export -out id_server.pfx
 ```
 
+Thêm `winpty` vào trước openssl trên Window. [Link](https://stackoverflow.com/questions/34156938/openssl-hangs-during-pkcs12-export-with-loading-screen-into-random-state?answertab=active#tab-top)
+
 Extension load cert file
 
 ```cs
