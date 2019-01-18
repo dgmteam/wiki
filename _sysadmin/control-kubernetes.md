@@ -14,7 +14,7 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 ## Cấu hình connect đến local cluster
 
 ```sh
-kubectl config set-cluster digimed-local --server=http://192.168.1.46
+kubectl config set-cluster digimed-local --server=http://192.168.1.46:8080
 kubectl config set-credentials dgm-admin --username=admin
 
 kubectl config set-context digimed-local --cluster=digimed-local --namespace=default --user=dgm-admin
