@@ -73,6 +73,15 @@ Containers:
 kubectl logs -f <pod-name>
 ```
 
+## Truy cập UI
+
+```sh
+kubectl proxy
+```
+
+UI Address:
+http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/deployment?namespace=default
+
 Tham số 
 
 * -f: follow logs
